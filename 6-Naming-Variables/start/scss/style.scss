@@ -1,7 +1,13 @@
+$white: #fff;
 
 $color-primary: #278da4;
 $color-secondary: #b13c69;
 $color-accent: #eeea72;
+$color-shade: #eee;
+
+$color-text: #343434;
+$color-bg: #3acec2;
+$color-bg-light: #009fe1;
 
 $font-stack-primary: 'Raleway', sans-serif;
 $font-stack-secondary: 'Bree Serif', serif;
@@ -13,7 +19,7 @@ $font-stack-secondary: 'Bree Serif', serif;
 }
 
 body {
-  color: #343434;
+  color: $color-text;
   font-size: 1rem;
   line-height: 1.5;
   font-family: $font-stack-primary;
@@ -36,14 +42,14 @@ ul {
 
 header {
   height: 480px;
-  background: linear-gradient(#009fe1, #3acec2), 
+  background: linear-gradient($color-bg, $color-bg-light),
               url('../img/bg.jpg') no-repeat;
   background-blend-mode: multiply;
   background-size: cover;
 }
 
 header h1 {
-  color: #fff;
+  color: $white;
   font-size: 4.8em;
   margin-bottom: 0;
   letter-spacing: 1px;
@@ -70,7 +76,7 @@ footer {
 
 .intro {
   margin: auto;
-  padding: 1em 1em 3em; 
+  padding: 1em 1em 3em;
 }
 
 /* COMPONENTS ------------------------------------- */
@@ -88,13 +94,13 @@ footer {
 }
 
 .card h1 {
-  color: $color-primary; 
+  color: $color-primary;
   margin: 0.35em 0 0;
   line-height: 1.25;
 }
 
 .btn-info {
-  color: #fff;
+  color: $white;
   display: inline-block;
   font-size: 0.85em;
   font-weight: bold;
@@ -102,7 +108,7 @@ footer {
   text-transform: uppercase;
   padding: 0.75em 1.5em;
   border-radius: 0.35em;
-  background-color: $color-primary;  
+  background-color: $color-primary;
   margin-top: auto;
 }
 
@@ -125,7 +131,7 @@ footer {
   .main-content {
     display: flex;
     flex-wrap: wrap;
-  }  
+  }
   .card {
     flex: 1;
   }
